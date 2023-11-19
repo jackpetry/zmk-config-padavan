@@ -1,6 +1,6 @@
 file_format: "1"
 id: padavan
-name: Padavan
+name: padavan
 type: shield
 url: https://github.com/kilipan/padavan
 requires: [pro_micro]
