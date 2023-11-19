@@ -6,13 +6,13 @@
 #define AAL 1
 #define FUN 2
 
-&lt {
-    quick_tap_ms = <200>;
-};
-
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
-};
+//&lt {
+//    quick_tap_ms = <200>;
+//};
+//
+//&caps_word {
+//    continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
+//};
 
 #define SCROT LG(PRINTSCREEN)
 
