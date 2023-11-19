@@ -38,8 +38,9 @@
                 &kp ESC    &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC   &kp DEL              &kp N7     &kp N8      &kp N9
                 &kp TAB    &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp RET    &kp LG(PRINTSCREEN)  &kp N4     &kp N5      &kp N6
       	        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp LBKT   &kp UP               &kp N1     &kp N2      &kp N3
-                &kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &lt FUN    &kp LEFT   &kp DOWN   &kp RIGHT            &kp N0      &lt AAL
+                &kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &kp F      &kp LEFT   &kp DOWN   &kp RIGHT            &kp N0      &kp A
             >;
+                //&kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &lt FUN    &kp LEFT   &kp DOWN   &kp RIGHT            &kp N0      &lt AAL
         };
         altalt {
             label = "AAL";
