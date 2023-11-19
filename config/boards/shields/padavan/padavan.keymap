@@ -14,7 +14,7 @@
 //    continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
 //};
 
-#define SCROT LG(PRINTSCREEN)
+//#define SCROT LG(PRINTSCREEN)
 
 
 
@@ -31,7 +31,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        aptmak {
+        alphas {
             label = "ALF";
 
             bindings = <
