@@ -3,7 +3,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-        zmk,matrix_transform = &default_transform;
+        zmk,matrix_transform = &default_transform; // Change this line to the layout you want to use!
     };
 
     default_transform: keymap_transform_0 {
