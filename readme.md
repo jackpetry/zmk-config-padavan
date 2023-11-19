@@ -26,11 +26,16 @@ To make your firmware conform to whatever layout you want to use, you'll have to
         zmk,matrix_transform = &default_transform; // Change this line to the layout you want to use!
 ```
 Here, exchange `&default_transform` for the appropriate layout:
-- Default (no a, no b): `&default_transform` for using three 1u bottom-left keys with 6.25u space bar
-- Alt Bottom (yes a, no b): `&alt_bottom_big_bar_transform` for using two 1.5u bottom-left keys with 6.25u space bar
-- Split Bar (no a, yes b): `&split_bar_transform` for using three 1u bottom-left keys with split bars
-- Alt Bottom Split Bar (yes a, yes b): `&alt_bottom_split_bar_transform` for using two 1.5u bottom-left keys with split bars
-- Everything everywhere all at once: `&everything_transform` for having all the options in the same firmware (mileage may vary)
+- Default (no a, no b):  
+  `&default_transform` for using three 1u bottom-left keys with 6.25u space bar
+- Alt Bottom (yes a, no b):  
+  `&alt_bottom_big_bar_transform` for using two 1.5u bottom-left keys with 6.25u space bar
+- Split Bar (no a, yes b):  
+  `&split_bar_transform` for using three 1u bottom-left keys with split bars
+- Alt Bottom Split Bar (yes a, yes b):  
+  `&alt_bottom_split_bar_transform` for using two 1.5u bottom-left keys with split bars
+- Everything everywhere all at once:  
+  `&everything_transform` for having all the options in the same firmware (mileage may vary)
 
 
 ## Troubeshooting
