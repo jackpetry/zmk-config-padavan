@@ -1,20 +1,20 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-//#include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/outputs.h>
 
-//#define ALF 0
-//#define AAL 1
-//#define FUN 2
+#define ALF 0
+#define AAL 1
+#define FUN 2
 
-//&lt {
-//    quick_tap_ms = <200>;
-//};
-//
-//&caps_word {
-//    continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
-//};
+&lt {
+    quick_tap_ms = <200>;
+};
 
-//#define SCROT LG(PRINTSCREEN)
+&caps_word {
+    continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
+};
+
+#define SCROT LG(PRINTSCREEN)
 
 
 
@@ -38,30 +38,29 @@
                 &kp ESC    &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSPC   &kp DEL              &kp N7     &kp N8      &kp N9
                 &kp TAB    &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp RET    &kp LG(PRINTSCREEN)  &kp N4     &kp N5      &kp N6
       	        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp LBKT   &kp UP               &kp N1     &kp N2      &kp N3
-                &kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &kp F      &kp LEFT   &kp DOWN   &kp RIGHT            &kp N0      &kp A
+                &kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &lt FUN    &kp LEFT   &kp DOWN   &kp RIGHT            &kp N0      &lt AAL
             >;
         };
-                //&kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &lt FUN    &kp LEFT   &kp DOWN   &kp RIGHT            &kp N0      &lt AAL
-//        altalt {
-//            label = "AAL";
-//
-//            bindings = <
-//                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp RA(MINUS) &kp RA(N7)   &kp RA(N0)
-//                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp GT        &kp GRAVE    &kp TILDE
-//      	        &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp UNDER     &kp PLUS     &trans
-//                &trans     &trans     &trans                           &trans                                      &trans     &trans     &trans     &trans        &trans        &trans       &trans
-//            >;
-//        };
-//        function {
-//            label = "FUN";
-//
-//            bindings = <
-//                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F7     &kp F8      &kp F9
-//                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F4     &kp F5      &kp F6
-//      	        &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F1     &kp F2      &kp F3
-//                &trans     &trans     &trans                           &trans                                      &trans     &trans     &trans     &trans     &kp F10    &kp F11     &kp F12
-//            >;
-//        };
+        altalt {
+            label = "AAL";
+
+            bindings = <
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp RA(MINUS) &kp RA(N7)   &kp RA(N0)
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp GT        &kp GRAVE    &kp TILDE
+      	        &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp UNDER     &kp PLUS     &trans
+                &trans     &trans     &trans                           &trans                                      &trans     &trans     &trans     &trans        &trans        &trans       &trans
+            >;
+        };
+        function {
+            label = "FUN";
+
+            bindings = <
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F7     &kp F8      &kp F9
+                &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F4     &kp F5      &kp F6
+      	        &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F1     &kp F2      &kp F3
+                &trans     &trans     &trans                           &trans                                      &trans     &trans     &trans     &trans     &kp F10    &kp F11     &kp F12
+            >;
+        };
 
     };
 };
