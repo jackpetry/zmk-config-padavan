@@ -6,15 +6,15 @@
 #define AAL 1
 #define FUN 2
 
-&lt {
-    quick_tap_ms = <200>;
-};
+//&lt {
+//    quick_tap_ms = <200>;
+//};
+//
+//&caps_word {
+//    continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
+//};
 
-&caps_word {
-    continue-list = <UNDERSCORE MINUS BSPC LSHFT RSHFT>;
-};
-
-#define SCROT LG(PRINTSCREEN)
+//#define SCROT LG(PRINTSCREEN)
 
 
 
@@ -35,27 +35,19 @@
             label = "ALF";
 
             bindings = <
-//             |  0       |  1       |  2       |  3       |  4       |  5       |  6       |  7       |  8       |  9       | 10       |  11     || 12      || 13       | 14        | 15        |
-                &kp ESC    &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSP    &kp DEL    &kp N7     &kp N8      &kp N9
-//             | 16       | 17       | 18       | 19       | 20       | 21       | 22       | 23       | 24       | 25       | 26       |  27     || 28      || 29       | 30        | 31        |
-                &kp TAB    &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp RET    &kp SCROT  &kp N4     &kp N5      &kp N6
-//             | 32       | 33       | 34       | 35       | 36       | 37       | 38       | 39       | 40       | 41       | 42       |  43     || 44      || 45       | 46        | 47        |
-      	        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp LBKT   &kp UP     &kp N1     &kp N2      &kp N3
-//             | 48       | 49       | 50      ||                       51                                       || 52       | 53       || 54      | 55       | 56      || 57        | 58        |
-                &kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &lt FUN    &kp LEFT   &kp DOWN   &kp RIGHT  &kp N0      &lt AAL
+                &kp ESC    &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp U      &kp I      &kp O      &kp P      &kp BSP    &kp DEL              &kp N7     &kp N8      &kp N9
+                &kp TAB    &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp SEMI   &kp RET    &kp LG(PRINTSCREEN)  &kp N4     &kp N5      &kp N6
+      	        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH   &kp LBKT   &kp UP               &kp N1     &kp N2      &kp N3
+                &kp LCTRL  &kp LALT   &kp LGUI                         &kp SPACE                                   &kp RALT   &lt FUN    &kp LEFT   &kp DOWN   &kp RIGHT            &kp N0      &lt AAL
             >;
         };
-        function {
+        altalt {
             label = "AAL";
 
             bindings = <
-//             |  0       |  1       |  2       |  3       |  4       |  5       |  6       |  7       |  8       |  9       | 10       |  11     || 12      ||    13          | 14         | 15        |
                 &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp RA(MINUS) &kp RA(N7)   &kp RA(N0)
-//             | 16       | 17       | 18       | 19       | 20       | 21       | 22       | 23       | 24       | 25       | 26       |  27     || 28      ||    29          | 30         | 31        |
                 &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp GT        &kp GRAVE    &kp TILDE
-//             | 32       | 33       | 34       | 35       | 36       | 37       | 38       | 39       | 40       | 41       | 42       |  43     || 44      ||    45          | 46         | 47        |
       	        &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans        &kp UNDER     &kp PLUS     &trans
-//             | 48       | 49       | 50      ||                       51                                       || 52       | 53       || 54      | 55       |    56         || 57         | 58        |
                 &trans     &trans     &trans                           &trans                                      &trans     &trans     &trans     &trans        &trans        &trans       &trans
             >;
         };
@@ -63,14 +55,10 @@
             label = "FUN";
 
             bindings = <
-//             |  0       |  1       |  2       |  3       |  4       |  5       |  6       |  7       |  8       |  9       | 10       |  11     || 12      || 13       | 14        | 15        |
                 &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F7     &kp F8      &kp F9
-//             | 16       | 17       | 18       | 19       | 20       | 21       | 22       | 23       | 24       | 25       | 26       |  27     || 28      || 29       | 30        | 31        |
                 &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F4     &kp F5      &kp F6
-//             | 32       | 33       | 34       | 35       | 36       | 37       | 38       | 39       | 40       | 41       | 42       |  43     || 44      || 45       | 46        | 47        |
       	        &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &trans     &kp F1     &kp F2      &kp F3
-//             | 48       | 49       | 50      ||                       51                                       || 52       | 53       || 54      | 55       | 56      || 57        | 58        |
-                &trans     &trans     &trans                           &trans                                      &trans     &trans     &trans     &trans     &kp F10     &kp F11    &kp F12
+                &trans     &trans     &trans                           &trans                                      &trans     &trans     &trans     &trans     &kp F10    &kp F11     &kp F12
             >;
         };
 
